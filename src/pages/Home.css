@@ -1,0 +1,12 @@
+
+.home__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title__image {
+  width: 800px;
+  height: auto;
+  padding-top: 100px;
+}
