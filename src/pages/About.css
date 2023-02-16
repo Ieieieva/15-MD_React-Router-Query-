@@ -12,15 +12,16 @@
   font-weight: 700;
   color: wheat;
   text-align: center;
-  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
-                   10px 20px 5px rgba(0,0,0,0.05),
-                   -10px 20px 5px rgba(0,0,0,0.05);
+  text-shadow:  0px 15px 5px rgba(0,0,0,0.1),
+                10px 20px 5px rgba(0,0,0,0.05),
+                -10px 20px 5px rgba(0,0,0,0.05);
 }
 
 .about__info {
   display: flex;
   padding-top: 50px;
 }
+
 .about__paragraph {
   width: 80%;
   font-size: 1.3rem;
@@ -33,5 +34,4 @@
 .about__image {
   max-width: 300px;
   height: auto;
-  
 }

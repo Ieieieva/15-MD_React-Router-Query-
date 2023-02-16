@@ -2,9 +2,6 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import "./Characters.css"
 import { Outlet, Link } from "react-router-dom"
-import { useParams } from 'react-router-dom'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { useQuery } from '@tanstack/react-query'
 
 interface Card {
   id: number,
@@ -12,42 +9,9 @@ interface Card {
   name: string
 }
 
-const queryClient = new QueryClient()
-console.log(queryClient)
-
 export const Characters = () => {
   const [cards, setCards] = useState([]);
   const [page, setPage] = useState(1);
-
-  // const { isLoading, error, data } = useQuery({
-  //   queryKey: ["characters"],
-  //   queryFn: () => 
-  //     axios.get(`https://rickandmortyapi.com/api/character?page=${page}`).then(({ data }) => {
-  //       const characters = data.results;
-  //       console.log(data)
-  //       setCards(characters);
-  //       console.log(characters);
-  //     })
-  // })
-  // if (isLoading) return <span>Loading...</span>
-  // if(error) return <span>Ooops, something went wrong... </span> 
-
-  // const charactersQuery = useQuery({
-  //   queryKey: ["characters"],
-  //   queryFn: () => {
-  //     axios.get('https://rickandmortyapi.com/api/character').then(({ data }) => {
-  //       const characters = data.results;
-  //       setCards(characters);
-  //       console.log(characters);
-  //     })
-  //   }
-  // })
-  // console.log(charactersQuery)
-  // if (charactersQuery.status === "loading") return <h1>Loading...</h1>
-  // if (charactersQuery.status === "error") {
-  //   return <h1>{JSON.stringify(charactersQuery.error)}</h1>
-  // }
-
 
   useEffect(() => {
     axios.get(`https://rickandmortyapi.com/api/character?page=${page}`).then(({ data }) => {

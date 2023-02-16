@@ -1,5 +1,4 @@
 
-
 .characters__title {
   font-size: 3rem;
   font-weight: 700;
@@ -7,8 +6,8 @@
   text-align: center;
   padding: 40px;
   text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
-                   10px 20px 5px rgba(0,0,0,0.05),
-                   -10px 20px 5px rgba(0,0,0,0.05);
+              10px 20px 5px rgba(0,0,0,0.05),
+              -10px 20px 5px rgba(0,0,0,0.05);
 }
 
 .cards__container {
@@ -24,12 +23,12 @@
   border-radius: 10px;
   overflow: hidden;
   background-color: gray;
-  box-shadow: 5px 5px 0 0 
-    rgba(65,117,5,1), 10px 10px 0 0 
-    rgba(65,117,5,0.6), 15px 15px 0 0 
-    rgba(65,117,5,0.4), 20px 20px 0 0 
-    rgba(65,117,5,0.2), 25px 25px 0 0 
-    rgba(65,117,5,0.1);
+  box-shadow:  5px 5px 0 0 
+              rgba(65,117,5,1), 10px 10px 0 0 
+              rgba(65,117,5,0.6), 15px 15px 0 0 
+              rgba(65,117,5,0.4), 20px 20px 0 0 
+              rgba(65,117,5,0.2), 25px 25px 0 0 
+              rgba(65,117,5,0.1);
 }
 .card:hover {
   opacity: 0.5;
@@ -44,8 +43,6 @@
   padding: 20px;
   text-align: center;
   color: rgb(41, 47, 30);
-  text-decoration: none;
-  
 }
 
 .button__wrapper {
@@ -53,5 +50,4 @@
   justify-content: center;
   padding: 20px;
   gap: 10px;
-  
 }
